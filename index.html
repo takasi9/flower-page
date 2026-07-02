@@ -5,40 +5,69 @@
 <title>花畑の朝</title>
 
 <style>
+
+body{
+    margin:0;
+    background:#ffffff;
+}
+
 .main{
-    position: relative;
-    width: 1000px;
+    position:relative;
+    width:1000px;
+    margin:auto;
 }
 
-.bg{
-    width: 1000px;
-    display: block;
+/* 背景画像 */
+.bg1{
+    width:1000px;
+    display:block;
 }
 
+/* 花畑 */
+.bg0{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:1000px;
+}
+
+/* メッセージ */
 .message{
-    position: absolute;
-    top: 35px;
-    left: 20px;
-    background: rgba(255,255,255,0.7);
-    padding: 15px;
-    color: #d63c75;
-    font-size: 22px;
-    font-weight: bold;
+    position:absolute;
+    top:30px;
+    left:30px;
+    background:rgba(255,255,255,0.8);
+    padding:15px 20px;
+    color:#d63c75;
+    font-size:24px;
+    font-weight:bold;
+    line-height:1.5;
 }
 
+/* 大きい蝶 */
 .b1{
-    position: absolute;
-    left: 280px;
-    top: 500px;
-    width: 90px;
+    position:absolute;
+    left:250px;
+    top:380px;
+    width:95px;
 }
 
+/* 左下の蝶 */
 .b2{
-    position: absolute;
-    left: 130px;
-    top: 560px;
-    width: 50px;
+    position:absolute;
+    left:120px;
+    top:460px;
+    width:70px;
 }
+
+/* 右上の蝶 */
+.b3{
+    position:absolute;
+    left:380px;
+    top:330px;
+    width:60px;
+}
+
 </style>
 
 </head>
@@ -47,16 +76,22 @@
 
 <div class="main">
 
-    <img src="素材/bg0.png" class="bg">
+    <!-- 背景 -->
+    <img src="素材/bg1.png" class="bg1">
 
+    <!-- 花畑 -->
+    <img src="素材/bg0.png" class="bg0">
+
+    <!-- メッセージ -->
     <div class="message">
         ぽかぽか陽気の穏やかな朝<br>
         花畑では、蝶々がのんびり飛んでいます
     </div>
 
+    <!-- 蝶 -->
     <img src="素材/butterfly.gif" class="b1">
-
-    <img src="素材/foo.gif" class="b2">
+    <img src="素材/butterfly.gif" class="b2">
+    <img src="素材/butterfly.gif" class="b3">
 
 </div>
 
